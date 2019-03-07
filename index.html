@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Airbrake gem - 表参道.rb #44</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="css/my.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Airbrake gem</h1>
+					<p>2019-03-07</p>
+					<p>表参道.rb #44</p>
+					<p>うなすけ</p>
+				</section>
+				<section>
+					<h2>自己紹介</h2>
+					<div class="flex-container">
+						<div class='item-40'>
+							<img src="img/icon_raw.jpg">
+						</div>
+						<div class='item-60'>
+							<ul>
+								<li>名前: うなすけ</li>
+								<li>所属: 株式会社バンク
+									<ul><li>サーバーサイドエンジニア</li></ul>
+								</li>
+								<li>Twitter: <a href="https://twitter.com/yu_suke1994">@yu_suke1994</a></li>
+								<li>GitHub: <a href="https://github.com/unasuke">@unasuke</a></li>
+								<li><small>Mastodon <a href="https://mstdn.unasuke.com/@unasuke">@unasuke@mstdn.unasuke.com</a></small></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h2>Airbrake</h2>
+					<img src='img/airbrake-lp.png'/>
+					<p>皆さんご存知エラー通知</p>
+				</section>
+				<section>
+					<h2>Airbrake APM</h2>
+					<img src='img/airbrake-performance.png'>
+					<p>えーマジ？Airbrakeでパフォーマンス見れるようになるの？</p>
+				</section>
+				<section>
+					<h2>Airbrake APM</h2>
+					<p style="font-size: 2em;">使いたい</p>
+				</section>
+				<section>
+					<h2>Airbrake APM</h2>
+					<img src='img/pr-3456.png' >
+				</section>
+				<section>
+					<img src='img/pr-3456-diff.png'>
+				</section>
+				<section>
+					<h2>テストが落ちる</h2>
+				</section>
+				<section>
+					<h2>落ちるやつ</h2>
+					<img src='img/pr-3456-ci-fail.png'>
+					<p>TypeError: instance of IO needed って何？</p>
+				</section>
+				<section>
+					<h2>castle/tdigest #6</h2>
+					<img src='img/castle-tdigest-issue-6.png'>
+					<a src='https://github.com/castle/tdigest/issues/6'>https://github.com/castle/tdigest/issues/6</a>
+				</section>
+				<section>
+					<h2>castle/tdigest #6</h2>
+					<img src='img/castle-tdigest-issue-6.png'>
+					<p>RBTreeが怪しい？</p>
+				</section>
+				<section>
+					<h2>skade/rbtree #2</h2>
+					<img src='img/skade-rbtree-issue-2.png'>
+				</section>
+				<section>
+					<h2>skade/rbtree latest commit date</h2>
+					<img src='img/skade-rbtree-master-latest.png'>
+					<p>オアーーーーー</p>
+				</section>
+				<section>
+					<h2>kyrylo/rbtree3爆誕</h2>
+					<img src='img/kyrylo-rbtree3.png'>
+				</section>
+				<section>
+					<h2>rbtree "3" ?</h2>
+				</section>
+				<section>
+					<h2>rbtree "3" ?</h2>
+					<p>Where is the rbtree "2" ?</p>
+				</section>
+				<section>
+					<h2>kitak/rbtree2</h2>
+					<img src='img/kitak-rbtree2.png'>
+				</section>
+				<section>
+					<h2>Now</h2>
+					<img src='img/airbake-apm.png'>
+				</section>
+				<section>
+					<h2>まとめ</h2>
+					<ul>
+						<li>Airbrakeでパフォーマンスを測定できるようになったよ</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				history: true,
+				transition: 'none',
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

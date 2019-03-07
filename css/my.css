@@ -1,0 +1,20 @@
+.reveal section .flex-container {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row;
+}
+
+.reveal section .flex-container .item-40 {
+  width: 40%;
+}
+.reveal section .flex-container .item-50 {
+  width: 50%;
+}
+.reveal section .flex-container .item-60 {
+  width: 60%;
+}
+
+.reveal section .twitter-tweet.twitter-tweet-rendered {
+  margin-left: auto;
+  margin-right: auto;
+}
